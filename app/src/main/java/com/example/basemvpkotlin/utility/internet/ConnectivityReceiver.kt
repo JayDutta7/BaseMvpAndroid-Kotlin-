@@ -1,5 +1,5 @@
 
-package com.example.basemvpkotlin.utility
+package com.example.basemvpkotlin.utility.internet
 
 import android.content.BroadcastReceiver
 import android.content.Context

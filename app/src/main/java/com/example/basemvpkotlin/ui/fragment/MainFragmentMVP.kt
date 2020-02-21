@@ -1,7 +1,7 @@
-package com.example.basemvpkotlin.fragment
+package com.example.basemvpkotlin.ui.fragment
 
-import com.example.basemvpkotlin.base.IBasePresenter
-import com.example.basemvpkotlin.base.IBaseView
+import com.example.basemvpkotlin.ui.base.IBasePresenter
+import com.example.basemvpkotlin.ui.base.IBaseView
 
 interface MainFragmentMVP {
     interface IView : IBaseView {

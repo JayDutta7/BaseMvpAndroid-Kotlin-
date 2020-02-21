@@ -6,6 +6,7 @@ import android.content.Context
 import android.os.Bundle
 import com.example.basemvpkotlin.database.localDatabase.MyAppDataBase
 import com.example.basemvpkotlin.database.sharedPreference.SharedPreferenceImpl
+import com.example.basemvpkotlin.utility.ReleaseApkTree
 import timber.log.Timber
 
 class MyApplication : Application() {

@@ -1,7 +1,7 @@
-package com.example.basemvpkotlin.activity
+package com.example.basemvpkotlin.ui.activity
 
-import com.example.basemvpkotlin.base.IBasePresenter
-import com.example.basemvpkotlin.base.IBaseView
+import com.example.basemvpkotlin.ui.base.IBasePresenter
+import com.example.basemvpkotlin.ui.base.IBaseView
 
 interface MainActivityMVP {
 

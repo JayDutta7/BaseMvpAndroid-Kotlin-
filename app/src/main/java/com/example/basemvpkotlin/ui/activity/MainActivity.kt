@@ -1,9 +1,8 @@
-package com.example.basemvpkotlin.activity
+package com.example.basemvpkotlin.ui.activity
 
 import android.os.Bundle
-import android.util.Log
 import com.example.basemvpkotlin.R
-import com.example.basemvpkotlin.base.BaseActivity
+import com.example.basemvpkotlin.ui.base.BaseActivity
 
 class MainActivity : BaseActivity(),MainActivityMVP.IView {
 

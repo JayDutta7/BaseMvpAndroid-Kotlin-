@@ -1,4 +1,4 @@
-package com.example.basemvpkotlin.utility
+package com.example.basemvpkotlin.utility.internet
 
 import android.app.Service
 import android.app.job.JobParameters
@@ -6,6 +6,8 @@ import android.app.job.JobService
 import android.content.Intent
 import android.content.IntentFilter
 import android.widget.Toast
+import com.example.basemvpkotlin.utility.internet.ConnectivityReceiver
+import com.example.basemvpkotlin.utility.internet.ConnectivityReceiverListener
 import timber.log.Timber
 
 
@@ -14,12 +16,14 @@ import timber.log.Timber
  * ultimately land on this service's "onStartJob" method.
  * @author Dcc
  */
-class NetworkSchedulerService : JobService(), ConnectivityReceiverListener {
+class NetworkSchedulerService : JobService(),
+    ConnectivityReceiverListener {
     private var mConnectivityReceiver: ConnectivityReceiver? = null
     override fun onCreate() {
         super.onCreate()
         Timber.i("Service created")
-        mConnectivityReceiver = ConnectivityReceiver(this)
+        mConnectivityReceiver =
+            ConnectivityReceiver(this)
     }
 
     override fun onDestroy() {

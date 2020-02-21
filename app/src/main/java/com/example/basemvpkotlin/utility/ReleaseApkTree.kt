@@ -1,4 +1,4 @@
-package com.example.basemvpkotlin
+package com.example.basemvpkotlin.utility
 
 import android.util.Log
 import timber.log.Timber

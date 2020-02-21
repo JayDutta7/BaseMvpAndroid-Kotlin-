@@ -1,4 +1,4 @@
-package com.example.basemvpkotlin.base
+package com.example.basemvpkotlin.ui.base
 
 interface IBasePresenter<V: IBaseView> {
      /**For Attaching Views**/

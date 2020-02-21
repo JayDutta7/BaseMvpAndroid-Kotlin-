@@ -1,4 +1,4 @@
-package com.example.basemvpkotlin.base
+package com.example.basemvpkotlin.ui.base
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -7,8 +7,6 @@ import android.app.job.JobScheduler
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -23,8 +21,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.basemvpkotlin.R
-import com.example.basemvpkotlin.utility.ConnectivityReceiver
-import com.example.basemvpkotlin.utility.NetworkSchedulerService
+import com.example.basemvpkotlin.utility.internet.ConnectivityReceiver
+import com.example.basemvpkotlin.utility.internet.NetworkSchedulerService
 import com.google.android.material.snackbar.Snackbar
 
 

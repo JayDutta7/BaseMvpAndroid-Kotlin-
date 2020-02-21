@@ -1,6 +1,6 @@
-package com.example.basemvpkotlin.activity
+package com.example.basemvpkotlin.ui.activity
 
-import com.example.basemvpkotlin.base.BasePresenter
+import com.example.basemvpkotlin.ui.base.BasePresenter
 
 class MainActivityPresenter<V : MainActivityMVP.IView> : BasePresenter<V>(),
     MainActivityMVP.IPresenter<V> {

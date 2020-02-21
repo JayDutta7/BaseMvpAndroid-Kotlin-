@@ -1,4 +1,4 @@
-package com.example.basemvpkotlin.base
+package com.example.basemvpkotlin.ui.base
 
 import android.content.Context
 import android.os.Bundle

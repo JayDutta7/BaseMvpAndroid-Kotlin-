@@ -1,9 +1,9 @@
-package com.example.basemvpkotlin.fragment
+package com.example.basemvpkotlin.ui.fragment
 
 import android.os.Bundle
 import android.view.View
 import com.example.basemvpkotlin.R
-import com.example.basemvpkotlin.base.BaseFragment
+import com.example.basemvpkotlin.ui.base.BaseFragment
 
 class MainFragment : BaseFragment(), MainFragmentMVP.IView {
 
