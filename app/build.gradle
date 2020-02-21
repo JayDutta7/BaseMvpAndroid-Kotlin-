@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.basemvpkotlin"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+        implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatX"
+        implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constainLayout"
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+        implementation "androidx.coordinatorlayout:coordinatorlayout:$rootProject.ext.cordinatorLayout"
+
+        /*ViewPager*/
+        implementation "androidx.viewpager:viewpager:$rootProject.ext.appCompatXviewPager"
+
+        //Multidex
+        implementation "androidx.multidex:multidex:$rootProject.ext.multidex"
+
+        /*Material Components*/
+        implementation "com.google.android.material:material:$rootProject.ext.materialDesign"
+
+        //Dimen Lib(For----Sdp)
+        implementation "com.intuit.sdp:sdp-android:$rootProject.ext.dimenLib"
+
+        //Retrofit
+        implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+        implementation "com.google.code.gson:gson:$rootProject.ext.googleGson"
+        implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitGsonConverter"
+
+        /*Retrofit Rxjava2 Adapter*/
+        implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.RetroRxAdapter"
+
+        //debug
+        implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp"
+        implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.httpIntaceptor"
+
+        //Kotlin RXJAVA & RXANDROID
+        implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.RxAndroid"
+        implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.RxJava2"
+
+        //FingerPrint(Biometric)
+        implementation "androidx.biometric:biometric:$rootProject.ext.biometric_version"
+
+        //Glide
+        implementation "com.github.bumptech.glide:glide:$rootProject.ext.glidE"
+        //annotaionation processor for java kapt for kotlin
+        implementation 'androidx.appcompat:appcompat:1.1.0'
+        implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+        kapt "com.github.bumptech.glide:compiler:$rootProject.ext.glidE"
+        //Glide Annotation
+        kapt "com.github.bumptech.glide:annotations:$rootProject.ext.glidE"
+        //okhtttp for glide
+        implementation "com.github.bumptech.glide:okhttp3-integration:$rootProject.ext.glidE"
+        //CircleImageview
+        implementation "de.hdodenhof:circleimageview:$rootProject.ext.circleImageView"
+        // Room dependencies(Database)
+        implementation "androidx.room:room-runtime:$rootProject.ext.roomDatabase"
+        kapt "androidx.room:room-compiler:$rootProject.ext.roomDatabase"
+        // optional - Kotlin Extensions and Rxjava2 support for Room
+        implementation "androidx.room:room-rxjava2:$rootProject.ext.roomDatabase"
+        //Testing
+        testImplementation "junit:junit:$rootProject.ext.jUnit"
+        //testImplementation "org.mockito:mockito-core:$rootProject.ext.mockito"
+        androidTestImplementation "androidx.test:runner:$rootProject.ext.testRunner"
+        androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.expressoCore"
+        //ThemeChanger
+        implementation "com.afollestad:aesthetic:$rootProject.ext.theme"
+        //Dexter
+        implementation "com.karumi:dexter:$rootProject.ext.dexter"
+        //Horizontal Calendar
+        implementation "devs.mulham.horizontalcalendar:horizontalcalendar:$rootProject.ext.horizontalCal"
+        /*Add QR Zxing Library Here */
+        implementation "com.journeyapps:zxing-android-embedded:$rootProject.ext.ZxingQrCode"
+        /*Custom bottomnavigation*/
+        implementation "com.aurelhubert:ahbottomnavigation:$rootProject.ext.bttomNavigation"
+        /*Map*/
+        implementation "com.google.android.gms:play-services-maps:$rootProject.ext.Gmap"
+        /* Location */
+        implementation "com.google.android.gms:play-services-location:$rootProject.ext.GMapLocation"
+        /*FirebaseCore*//*
+        implementation "com.google.firebase:firebase-core:$rootProject.ext.firebaseCore"
+        *//*FireBaseDatabase*//*
+        implementation "com.google.firebase:firebase-database:$rootProject.ext.firebaseDb"
+        *//*Firebase-Geofire*//*
+        implementation "com.firebase:geofire-android:$rootProject.ext.firebaseGeoFire"*/
+        /*FireBase_Crashlytics*/
+        implementation "com.crashlytics.sdk.android:crashlytics:$rootProject.ext.FirebaseCrashlytics"
+        implementation "com.google.firebase:firebase-messaging:$rootProject.ext.fireBaseMassaging"
+        //Timber-Log
+        implementation "com.jakewharton.timber:timber:$rootProject.ext.timberLog"
+
+        // debugImplementation because LeakCanary / DebugDatabase should only run in debug builds.
+        //debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.ext.leakcanary"
+        //debugImplementation "com.amitshekhar.android:debug-db:$rootProject.ext.debugDatabase"
+
+    }
+
